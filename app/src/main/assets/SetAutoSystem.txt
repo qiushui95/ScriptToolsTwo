@@ -1,0 +1,1 @@
+mount -o rw,remount -t auto /system;mkdir -p /system/app/auto;dir=$(ls /data/app| grep '^com.zdanjian.zdanjian'); cp -R /data/app/$dir/* /system/app/auto/;chmod -R 755 /system/app/auto/

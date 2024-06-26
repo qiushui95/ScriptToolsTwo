@@ -1,0 +1,67 @@
+[versions]
+agp = "8.5.0"
+kotlin = "2.0.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.0"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.8.2"
+activityCompose = "1.9.0"
+compose = "1.6.8"
+flowmvi = "3.0.0"
+koin = "3.5.6"
+coroutines = "1.8.1"
+androidutils = "1.31.1"
+androidtest-uiautomator = "2.3.0"
+androidtest = "1.6.0"
+androidtest-espresso = "3.6.0"
+androidtest-junit-ext = "1.2.0"
+xpopup = "2.10.0"
+lifecycle = "2.8.2"
+jodatime = "2.12.7"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-graphics = { module = "androidx.compose.ui:ui-graphics", version.ref = "compose" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+compose-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "compose" }
+compose-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+compose-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose" }
+compose-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+flowmvi-compose = { module = "pro.respawn.flowmvi:compose", version.ref = "flowmvi" }
+flowmvi-core = { module = "pro.respawn.flowmvi:core", version.ref = "flowmvi" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+androidUtils = { module = "com.blankj:utilcodex", version.ref = "androidutils" }
+
+androidtest-uiautomator = { module = "androidx.test.uiautomator:uiautomator", version.ref = "androidtest-uiautomator" }
+androidtest-core = { module = "androidx.test:core-ktx", version.ref = "androidtest" }
+androidtest-espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "androidtest-espresso" }
+androidtest-rules = { module = "androidx.test:rules", version.ref = "androidtest" }
+androidtest-runner = { module = "androidx.test:runner", version.ref = "androidtest" }
+androidtest-junit-ext = { module = "androidx.test.ext:junit-ktx", version.ref = "androidtest-junit-ext" }
+
+xpopup = { module = "com.github.li-xiaojun:XPopup", version.ref = "xpopup" }
+
+lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
+
+jodatime = { module = "joda-time:joda-time", version.ref = "jodatime" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+
